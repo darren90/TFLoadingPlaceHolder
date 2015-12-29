@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BaseViewController.h"
+#import "BaseTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     BaseViewController *baseVc = [[BaseViewController alloc]init];
-    self.window.rootViewController = baseVc;
+    BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
+    
+    UINavigationController *base_nav = [[UINavigationController alloc]initWithRootViewController:baseVc];
+    UINavigationController *baseTable_nav = [[UINavigationController alloc]initWithRootViewController:baseTableVc];
+
+    self.window.rootViewController = base_nav;
     
     return YES;
 }

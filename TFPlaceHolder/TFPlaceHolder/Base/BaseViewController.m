@@ -47,6 +47,13 @@
 
 @implementation BaseViewController
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.gifImageView startAnimating];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
