@@ -19,9 +19,9 @@
 		8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */; };
 		8955EE131C32702C001CAD57 /* XTNetReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE121C32702C001CAD57 /* XTNetReloader.m */; };
 		896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */; };
-		FE7184F91C32CBA10035F588 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7184F81C32CBA10035F588 /* BaseViewController.m */; };
-		FE7184FC1C32CBBF0035F588 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7184FB1C32CBBF0035F588 /* BaseTableViewController.m */; };
-		FE7184FF1C32CBE20035F588 /* Base_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7184FE1C32CBE20035F588 /* Base_TableViewController.m */; };
+		FE7185071C32CC970035F588 /* Base_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185021C32CC970035F588 /* Base_TableViewController.m */; };
+		FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185041C32CC970035F588 /* BaseTableViewController.m */; };
+		FE7185091C32CC970035F588 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185061C32CC970035F588 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,12 +69,12 @@
 		896A89961C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
 		896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
 		B8B0A84AE585A9A5DCA6C638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE7184F71C32CBA10035F588 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		FE7184F81C32CBA10035F588 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		FE7184FA1C32CBBF0035F588 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		FE7184FB1C32CBBF0035F588 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		FE7184FD1C32CBE20035F588 /* Base_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base_TableViewController.h; sourceTree = "<group>"; };
-		FE7184FE1C32CBE20035F588 /* Base_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base_TableViewController.m; sourceTree = "<group>"; };
+		FE7185011C32CC970035F588 /* Base_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base_TableViewController.h; sourceTree = "<group>"; };
+		FE7185021C32CC970035F588 /* Base_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base_TableViewController.m; sourceTree = "<group>"; };
+		FE7185031C32CC970035F588 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		FE7185041C32CC970035F588 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		FE7185051C32CC970035F588 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FE7185061C32CC970035F588 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,18 +137,13 @@
 		8955EDD91C326691001CAD57 /* TFPlaceHolder */ = {
 			isa = PBXGroup;
 			children = (
+				FE7185001C32CC970035F588 /* Base */,
 				896A89931C32928B00FC3740 /* CYLTableViewPlaceHolder */,
 				8955EE101C32702C001CAD57 /* XTNetReloader */,
 				8955EDDD1C326691001CAD57 /* AppDelegate.h */,
 				8955EDDE1C326691001CAD57 /* AppDelegate.m */,
 				8955EDE01C326691001CAD57 /* ViewController.h */,
 				8955EDE11C326691001CAD57 /* ViewController.m */,
-				FE7184F71C32CBA10035F588 /* BaseViewController.h */,
-				FE7184F81C32CBA10035F588 /* BaseViewController.m */,
-				FE7184FA1C32CBBF0035F588 /* BaseTableViewController.h */,
-				FE7184FB1C32CBBF0035F588 /* BaseTableViewController.m */,
-				FE7184FD1C32CBE20035F588 /* Base_TableViewController.h */,
-				FE7184FE1C32CBE20035F588 /* Base_TableViewController.m */,
 				8955EE0D1C3269C9001CAD57 /* TFTableViewController.h */,
 				8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */,
 				8955EDE31C326691001CAD57 /* Main.storyboard */,
@@ -212,6 +207,19 @@
 				B8B0A84AE585A9A5DCA6C638 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE7185001C32CC970035F588 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FE7185011C32CC970035F588 /* Base_TableViewController.h */,
+				FE7185021C32CC970035F588 /* Base_TableViewController.m */,
+				FE7185031C32CC970035F588 /* BaseTableViewController.h */,
+				FE7185041C32CC970035F588 /* BaseTableViewController.m */,
+				FE7185051C32CC970035F588 /* BaseViewController.h */,
+				FE7185061C32CC970035F588 /* BaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,14 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7184FF1C32CBE20035F588 /* Base_TableViewController.m in Sources */,
+				FE7185091C32CC970035F588 /* BaseViewController.m in Sources */,
 				896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
+				FE7185071C32CC970035F588 /* Base_TableViewController.m in Sources */,
 				8955EDE21C326691001CAD57 /* ViewController.m in Sources */,
 				8955EDDF1C326691001CAD57 /* AppDelegate.m in Sources */,
 				8955EDDC1C326691001CAD57 /* main.m in Sources */,
+				FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */,
 				8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */,
-				FE7184F91C32CBA10035F588 /* BaseViewController.m in Sources */,
-				FE7184FC1C32CBBF0035F588 /* BaseTableViewController.m in Sources */,
 				8955EE131C32702C001CAD57 /* XTNetReloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
