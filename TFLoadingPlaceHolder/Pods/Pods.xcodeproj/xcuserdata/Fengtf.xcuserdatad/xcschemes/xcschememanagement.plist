@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TFLoadingPlaceHolder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TFLoadingPlaceHolderTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TFLoadingPlaceHolderUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>162391D03342F4BC08FB05EE5742773F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F340DCE617780E61ECED6B37A7A05FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2549FBCCA995555ADADA51E7364BFBF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>499F8513DA9F68498F8C54F0B0E99A85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFCFB1EE6CEDA29E2F7FC3B47F4D8902</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
