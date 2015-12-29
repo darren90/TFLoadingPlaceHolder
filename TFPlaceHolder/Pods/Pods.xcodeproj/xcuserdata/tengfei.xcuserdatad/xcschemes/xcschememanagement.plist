@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-TFPlaceHolder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-TFPlaceHolderTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-TFPlaceHolderUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>14EDE7810A975A58C86ACD27776524C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>395764F687CA2EA563C18874F8532660</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>499F8513DA9F68498F8C54F0B0E99A85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCEF57774A1CF944BBBFD1E8B59617C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE569E51F0E80CD6AFDE685A1CE17F9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
