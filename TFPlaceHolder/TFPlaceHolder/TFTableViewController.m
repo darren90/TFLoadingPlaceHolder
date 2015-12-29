@@ -49,9 +49,17 @@
 
 -(void)loadMoreData
 {
-    if (!self.dataArray.count) {
-        self.dataArray = nil;
-    }
+//    if (self.dataArray.count) {
+//        self.dataArray = nil;
+//    }
+    
+    // 2.模拟2秒后刷新表格UI（真实开发中，可以移除这段gcd代码）
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 刷新表格
+        [self.tableView cyl_reloadData];
+        // 拿到当前的下拉刷新控件，结束刷新状态
+        [self.tableView.mj_footer endRefreshing];
+    });
 }
 
 - (void)loadNewData {
@@ -68,7 +76,7 @@
     }
     
     // 2.模拟2秒后刷新表格UI（真实开发中，可以移除这段gcd代码）
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 刷新表格
         [self.tableView cyl_reloadData];
         // 拿到当前的下拉刷新控件，结束刷新状态
@@ -118,7 +126,7 @@
 
  -(NSMutableArray *)dataArray
 {
-    if (_dataArray ) {
+    if (!_dataArray ) {
         _dataArray = [NSMutableArray array];
     }
     return _dataArray;
