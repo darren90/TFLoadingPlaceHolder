@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()
+@interface BaseViewController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 /**
  *  左边按钮
  */
@@ -91,7 +91,7 @@
     self.titleImage.contentMode = UIViewContentModeScaleAspectFit;
     [self.navImage addSubview:self.titleImage];
     
-//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
     

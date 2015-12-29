@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BaseViewController.h"
 #import "BaseTableViewController.h"
+#import "BaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -25,8 +26,15 @@
     BaseViewController *baseVc = [[BaseViewController alloc]init];
     BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
     
-    UINavigationController *base_nav = [[UINavigationController alloc]initWithRootViewController:baseVc];
-    UINavigationController *baseTable_nav = [[UINavigationController alloc]initWithRootViewController:baseTableVc];
+    UIViewController *vc = [[UIViewController alloc]init];
+    
+    UIView *view = [[UIView alloc]init];
+    [vc.view addSubview:view];
+    view.backgroundColor = [UIColor redColor];
+    view.frame = CGRectMake(100,0, 100, 100);
+    
+    BaseNavigationController *base_nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    BaseNavigationController *baseTable_nav = [[UINavigationController alloc]initWithRootViewController:baseTableVc];
 
     self.window.rootViewController = base_nav;
     

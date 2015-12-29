@@ -22,6 +22,7 @@
 		FE7185071C32CC970035F588 /* Base_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185021C32CC970035F588 /* Base_TableViewController.m */; };
 		FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185041C32CC970035F588 /* BaseTableViewController.m */; };
 		FE7185091C32CC970035F588 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185061C32CC970035F588 /* BaseViewController.m */; };
+		FE71850C1C32D8D50035F588 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71850B1C32D8D50035F588 /* BaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		FE7185041C32CC970035F588 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		FE7185051C32CC970035F588 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		FE7185061C32CC970035F588 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FE71850A1C32D8D50035F588 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		FE71850B1C32D8D50035F588 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 		FE7185001C32CC970035F588 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FE71850A1C32D8D50035F588 /* BaseNavigationController.h */,
+				FE71850B1C32D8D50035F588 /* BaseNavigationController.m */,
 				FE7185011C32CC970035F588 /* Base_TableViewController.h */,
 				FE7185021C32CC970035F588 /* Base_TableViewController.m */,
 				FE7185031C32CC970035F588 /* BaseTableViewController.h */,
@@ -391,6 +396,7 @@
 				896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				FE7185071C32CC970035F588 /* Base_TableViewController.m in Sources */,
 				8955EDE21C326691001CAD57 /* ViewController.m in Sources */,
+				FE71850C1C32D8D50035F588 /* BaseNavigationController.m in Sources */,
 				8955EDDF1C326691001CAD57 /* AppDelegate.m in Sources */,
 				8955EDDC1C326691001CAD57 /* main.m in Sources */,
 				FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */,
