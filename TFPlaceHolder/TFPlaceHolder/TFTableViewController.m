@@ -8,7 +8,7 @@
 
 #import "TFTableViewController.h"
 #import <MJRefresh.h>
-#import <CYLTableViewPlaceHolder.h>
+#import "CYLTableViewPlaceHolder.h"
 #import "XTNetReloader.h"
 
 @interface TFTableViewController ()<CYLTableViewPlaceHolderDelegate>
@@ -39,18 +39,32 @@
         [weakSelf loadNewData];
     }];
     
+    // 设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [weakSelf loadMoreData];
+    }];
     // 马上进入刷新状态
     [self.tableView.mj_header beginRefreshing];
 }
 
-- (void)loadNewData {
+-(void)loadMoreData
+{
     if (!self.dataArray.count) {
         self.dataArray = nil;
-    } else {
-        // 1.添加假数据
-        for (int i = 0; i<25; i++) {
-            [self.dataArray insertObject:@"" atIndex:0];
-        }
+    }
+}
+
+- (void)loadNewData {
+//    if (!self.dataArray.count) {
+//        self.dataArray = nil;
+//    } else {
+//        // 1.添加假数据
+//        for (int i = 0; i<8; i++) {
+//            [self.dataArray insertObject:@"" atIndex:0];
+//        }
+//    }
+    for (int i = 0; i<8; i++) {
+        [self.dataArray insertObject:@"" atIndex:0];
     }
     
     // 2.模拟2秒后刷新表格UI（真实开发中，可以移除这段gcd代码）
