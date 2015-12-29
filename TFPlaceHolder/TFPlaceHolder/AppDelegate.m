@@ -27,14 +27,13 @@
     BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
     
     UIViewController *vc = [[UIViewController alloc]init];
-    
     UIView *view = [[UIView alloc]init];
     [vc.view addSubview:view];
     view.backgroundColor = [UIColor redColor];
     view.frame = CGRectMake(100,0, 100, 100);
     
-    BaseNavigationController *base_nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    BaseNavigationController *baseTable_nav = [[UINavigationController alloc]initWithRootViewController:baseTableVc];
+    BaseNavigationController *base_nav = [[BaseNavigationController alloc]initWithRootViewController:baseVc];
+    BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:baseTableVc];
 
     self.window.rootViewController = base_nav;
     
