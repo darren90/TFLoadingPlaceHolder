@@ -1,0 +1,13 @@
+PODS:
+  - CYLTableViewPlaceHolder (1.0.6)
+  - MJRefresh (3.0.8)
+
+DEPENDENCIES:
+  - CYLTableViewPlaceHolder
+  - MJRefresh (~> 3.0.8)
+
+SPEC CHECKSUMS:
+  CYLTableViewPlaceHolder: 44eae89c0b3ba9e5e9a061bab9e9ddac0e7c5059
+  MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
+
+COCOAPODS: 0.38.2

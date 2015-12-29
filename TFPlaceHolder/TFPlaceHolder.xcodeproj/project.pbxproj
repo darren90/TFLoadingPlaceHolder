@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		805B49452BDEA9929F6C9B62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B0A84AE585A9A5DCA6C638 /* libPods.a */; };
+		8955EDDC1C326691001CAD57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EDDB1C326691001CAD57 /* main.m */; };
+		8955EDDF1C326691001CAD57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EDDE1C326691001CAD57 /* AppDelegate.m */; };
+		8955EDE21C326691001CAD57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EDE11C326691001CAD57 /* ViewController.m */; };
+		8955EDE51C326691001CAD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8955EDE31C326691001CAD57 /* Main.storyboard */; };
+		8955EDE71C326691001CAD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8955EDE61C326691001CAD57 /* Assets.xcassets */; };
+		8955EDEA1C326691001CAD57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8955EDE81C326691001CAD57 /* LaunchScreen.storyboard */; };
+		8955EDF51C326691001CAD57 /* TFPlaceHolderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EDF41C326691001CAD57 /* TFPlaceHolderTests.m */; };
+		8955EE001C326691001CAD57 /* TFPlaceHolderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EDFF1C326691001CAD57 /* TFPlaceHolderUITests.m */; };
+		8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */; };
+		8955EE131C32702C001CAD57 /* XTNetReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE121C32702C001CAD57 /* XTNetReloader.m */; };
+		896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8955EDF11C326691001CAD57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8955EDCF1C326691001CAD57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8955EDD61C326691001CAD57;
+			remoteInfo = TFPlaceHolder;
+		};
+		8955EDFC1C326691001CAD57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8955EDCF1C326691001CAD57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8955EDD61C326691001CAD57;
+			remoteInfo = TFPlaceHolder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		569241340F1E9C0D6DDB33F4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6E764DF84E51DB8F631ED851 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8955EDD71C326691001CAD57 /* TFPlaceHolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFPlaceHolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8955EDDB1C326691001CAD57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8955EDDD1C326691001CAD57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8955EDDE1C326691001CAD57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8955EDE01C326691001CAD57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8955EDE11C326691001CAD57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8955EDE41C326691001CAD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8955EDE61C326691001CAD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8955EDE91C326691001CAD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8955EDEB1C326691001CAD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8955EDF01C326691001CAD57 /* TFPlaceHolderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFPlaceHolderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8955EDF41C326691001CAD57 /* TFPlaceHolderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPlaceHolderTests.m; sourceTree = "<group>"; };
+		8955EDF61C326691001CAD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8955EDFB1C326691001CAD57 /* TFPlaceHolderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFPlaceHolderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8955EDFF1C326691001CAD57 /* TFPlaceHolderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPlaceHolderUITests.m; sourceTree = "<group>"; };
+		8955EE011C326691001CAD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8955EE0D1C3269C9001CAD57 /* TFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTableViewController.h; sourceTree = "<group>"; };
+		8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTableViewController.m; sourceTree = "<group>"; };
+		8955EE111C32702C001CAD57 /* XTNetReloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTNetReloader.h; sourceTree = "<group>"; };
+		8955EE121C32702C001CAD57 /* XTNetReloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTNetReloader.m; sourceTree = "<group>"; };
+		896A89941C32928B00FC3740 /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
+		896A89951C32928B00FC3740 /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
+		896A89961C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
+		896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
+		B8B0A84AE585A9A5DCA6C638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8955EDD41C326691001CAD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805B49452BDEA9929F6C9B62 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDED1C326691001CAD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDF81C326691001CAD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559D65020C9DAAD415F63968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				569241340F1E9C0D6DDB33F4 /* Pods.debug.xcconfig */,
+				6E764DF84E51DB8F631ED851 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8955EDCE1C326691001CAD57 = {
+			isa = PBXGroup;
+			children = (
+				8955EDD91C326691001CAD57 /* TFPlaceHolder */,
+				8955EDF31C326691001CAD57 /* TFPlaceHolderTests */,
+				8955EDFE1C326691001CAD57 /* TFPlaceHolderUITests */,
+				8955EDD81C326691001CAD57 /* Products */,
+				559D65020C9DAAD415F63968 /* Pods */,
+				F08F30C01AB7F715B572F999 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8955EDD81C326691001CAD57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8955EDD71C326691001CAD57 /* TFPlaceHolder.app */,
+				8955EDF01C326691001CAD57 /* TFPlaceHolderTests.xctest */,
+				8955EDFB1C326691001CAD57 /* TFPlaceHolderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8955EDD91C326691001CAD57 /* TFPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				896A89931C32928B00FC3740 /* CYLTableViewPlaceHolder */,
+				8955EE101C32702C001CAD57 /* XTNetReloader */,
+				8955EDDD1C326691001CAD57 /* AppDelegate.h */,
+				8955EDDE1C326691001CAD57 /* AppDelegate.m */,
+				8955EDE01C326691001CAD57 /* ViewController.h */,
+				8955EDE11C326691001CAD57 /* ViewController.m */,
+				8955EE0D1C3269C9001CAD57 /* TFTableViewController.h */,
+				8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */,
+				8955EDE31C326691001CAD57 /* Main.storyboard */,
+				8955EDE61C326691001CAD57 /* Assets.xcassets */,
+				8955EDE81C326691001CAD57 /* LaunchScreen.storyboard */,
+				8955EDEB1C326691001CAD57 /* Info.plist */,
+				8955EDDA1C326691001CAD57 /* Supporting Files */,
+			);
+			path = TFPlaceHolder;
+			sourceTree = "<group>";
+		};
+		8955EDDA1C326691001CAD57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8955EDDB1C326691001CAD57 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8955EDF31C326691001CAD57 /* TFPlaceHolderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8955EDF41C326691001CAD57 /* TFPlaceHolderTests.m */,
+				8955EDF61C326691001CAD57 /* Info.plist */,
+			);
+			path = TFPlaceHolderTests;
+			sourceTree = "<group>";
+		};
+		8955EDFE1C326691001CAD57 /* TFPlaceHolderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8955EDFF1C326691001CAD57 /* TFPlaceHolderUITests.m */,
+				8955EE011C326691001CAD57 /* Info.plist */,
+			);
+			path = TFPlaceHolderUITests;
+			sourceTree = "<group>";
+		};
+		8955EE101C32702C001CAD57 /* XTNetReloader */ = {
+			isa = PBXGroup;
+			children = (
+				8955EE111C32702C001CAD57 /* XTNetReloader.h */,
+				8955EE121C32702C001CAD57 /* XTNetReloader.m */,
+			);
+			path = XTNetReloader;
+			sourceTree = "<group>";
+		};
+		896A89931C32928B00FC3740 /* CYLTableViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				896A89941C32928B00FC3740 /* CYLTableViewPlaceHolder.h */,
+				896A89951C32928B00FC3740 /* CYLTableViewPlaceHolderDelegate.h */,
+				896A89961C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.h */,
+				896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */,
+			);
+			path = CYLTableViewPlaceHolder;
+			sourceTree = "<group>";
+		};
+		F08F30C01AB7F715B572F999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0A84AE585A9A5DCA6C638 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8955EDD61C326691001CAD57 /* TFPlaceHolder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8955EE041C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolder" */;
+			buildPhases = (
+				27E487F426962B6953466FCF /* Check Pods Manifest.lock */,
+				8955EDD31C326691001CAD57 /* Sources */,
+				8955EDD41C326691001CAD57 /* Frameworks */,
+				8955EDD51C326691001CAD57 /* Resources */,
+				C76DD45DB94DA8CB845D8515 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFPlaceHolder;
+			productName = TFPlaceHolder;
+			productReference = 8955EDD71C326691001CAD57 /* TFPlaceHolder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8955EDEF1C326691001CAD57 /* TFPlaceHolderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8955EE071C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolderTests" */;
+			buildPhases = (
+				8955EDEC1C326691001CAD57 /* Sources */,
+				8955EDED1C326691001CAD57 /* Frameworks */,
+				8955EDEE1C326691001CAD57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8955EDF21C326691001CAD57 /* PBXTargetDependency */,
+			);
+			name = TFPlaceHolderTests;
+			productName = TFPlaceHolderTests;
+			productReference = 8955EDF01C326691001CAD57 /* TFPlaceHolderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8955EDFA1C326691001CAD57 /* TFPlaceHolderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8955EE0A1C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolderUITests" */;
+			buildPhases = (
+				8955EDF71C326691001CAD57 /* Sources */,
+				8955EDF81C326691001CAD57 /* Frameworks */,
+				8955EDF91C326691001CAD57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8955EDFD1C326691001CAD57 /* PBXTargetDependency */,
+			);
+			name = TFPlaceHolderUITests;
+			productName = TFPlaceHolderUITests;
+			productReference = 8955EDFB1C326691001CAD57 /* TFPlaceHolderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8955EDCF1C326691001CAD57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ftf;
+				TargetAttributes = {
+					8955EDD61C326691001CAD57 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8955EDEF1C326691001CAD57 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8955EDD61C326691001CAD57;
+					};
+					8955EDFA1C326691001CAD57 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8955EDD61C326691001CAD57;
+					};
+				};
+			};
+			buildConfigurationList = 8955EDD21C326691001CAD57 /* Build configuration list for PBXProject "TFPlaceHolder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8955EDCE1C326691001CAD57;
+			productRefGroup = 8955EDD81C326691001CAD57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8955EDD61C326691001CAD57 /* TFPlaceHolder */,
+				8955EDEF1C326691001CAD57 /* TFPlaceHolderTests */,
+				8955EDFA1C326691001CAD57 /* TFPlaceHolderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8955EDD51C326691001CAD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955EDEA1C326691001CAD57 /* LaunchScreen.storyboard in Resources */,
+				8955EDE71C326691001CAD57 /* Assets.xcassets in Resources */,
+				8955EDE51C326691001CAD57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDEE1C326691001CAD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDF91C326691001CAD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E487F426962B6953466FCF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C76DD45DB94DA8CB845D8515 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8955EDD31C326691001CAD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
+				8955EDE21C326691001CAD57 /* ViewController.m in Sources */,
+				8955EDDF1C326691001CAD57 /* AppDelegate.m in Sources */,
+				8955EDDC1C326691001CAD57 /* main.m in Sources */,
+				8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */,
+				8955EE131C32702C001CAD57 /* XTNetReloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDEC1C326691001CAD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955EDF51C326691001CAD57 /* TFPlaceHolderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8955EDF71C326691001CAD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955EE001C326691001CAD57 /* TFPlaceHolderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8955EDF21C326691001CAD57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8955EDD61C326691001CAD57 /* TFPlaceHolder */;
+			targetProxy = 8955EDF11C326691001CAD57 /* PBXContainerItemProxy */;
+		};
+		8955EDFD1C326691001CAD57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8955EDD61C326691001CAD57 /* TFPlaceHolder */;
+			targetProxy = 8955EDFC1C326691001CAD57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8955EDE31C326691001CAD57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8955EDE41C326691001CAD57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8955EDE81C326691001CAD57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8955EDE91C326691001CAD57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8955EE021C326691001CAD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8955EE031C326691001CAD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8955EE051C326691001CAD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569241340F1E9C0D6DDB33F4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TFPlaceHolder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8955EE061C326691001CAD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E764DF84E51DB8F631ED851 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TFPlaceHolder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8955EE081C326691001CAD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFPlaceHolderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFPlaceHolder.app/TFPlaceHolder";
+			};
+			name = Debug;
+		};
+		8955EE091C326691001CAD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFPlaceHolderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFPlaceHolder.app/TFPlaceHolder";
+			};
+			name = Release;
+		};
+		8955EE0B1C326691001CAD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFPlaceHolderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFPlaceHolder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8955EE0C1C326691001CAD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFPlaceHolderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.loding.TFPlaceHolderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFPlaceHolder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8955EDD21C326691001CAD57 /* Build configuration list for PBXProject "TFPlaceHolder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955EE021C326691001CAD57 /* Debug */,
+				8955EE031C326691001CAD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8955EE041C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955EE051C326691001CAD57 /* Debug */,
+				8955EE061C326691001CAD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8955EE071C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955EE081C326691001CAD57 /* Debug */,
+				8955EE091C326691001CAD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8955EE0A1C326691001CAD57 /* Build configuration list for PBXNativeTarget "TFPlaceHolderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955EE0B1C326691001CAD57 /* Debug */,
+				8955EE0C1C326691001CAD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8955EDCF1C326691001CAD57 /* Project object */;
+}

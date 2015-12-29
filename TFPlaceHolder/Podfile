@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+#pod 'CYLTableViewPlaceHolder'
+pod 'MJRefresh', '~> 3.0.8'
+
+target 'TFPlaceHolder' do
+
+end
+
+target 'TFPlaceHolderTests' do
+
+end
+
+target 'TFPlaceHolderUITests' do
+
+end
+
