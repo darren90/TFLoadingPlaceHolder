@@ -21,26 +21,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
-//    BaseViewController *baseVc = [[BaseViewController alloc]init];
-//    BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
-//    Base_TableViewController *base_TableVc = [[Base_TableViewController alloc]init];
-//
-//    
-//    UIViewController *vc = [[UIViewController alloc]init];
-//    UIView *view = [[UIView alloc]init];
-//    [vc.view addSubview:view];
-//    view.backgroundColor = [UIColor redColor];
-//    view.frame = CGRectMake(100,0, 100, 100);
-//    
-//    BaseNavigationController *base_nav = [[BaseNavigationController alloc]initWithRootViewController:baseVc];
-//    BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:baseTableVc];
-//    BaseNavigationController *base_Table_nav = [[BaseNavigationController alloc]initWithRootViewController:base_TableVc];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    BaseViewController *baseVc = [[BaseViewController alloc]init];
+    BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
+    Base_TableViewController *base_TableVc = [[Base_TableViewController alloc]init];
+
+    
+    UIViewController *vc = [[UIViewController alloc]init];
+    UIView *view = [[UIView alloc]init];
+    [vc.view addSubview:view];
+    view.backgroundColor = [UIColor redColor];
+    view.frame = CGRectMake(100,0, 100, 100);
+    
+    BaseNavigationController *base_nav = [[BaseNavigationController alloc]initWithRootViewController:baseVc];
+    BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:baseTableVc];
+    BaseNavigationController *base_Table_nav = [[BaseNavigationController alloc]initWithRootViewController:base_TableVc];
 
 
-//    self.window.rootViewController = baseTable_nav;
+    self.window.rootViewController = baseTable_nav;
     
     return YES;
 }
