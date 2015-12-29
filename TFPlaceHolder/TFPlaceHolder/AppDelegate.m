@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 #import "BaseTableViewController.h"
 #import "BaseNavigationController.h"
+#import "Base_TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,8 @@
     [self.window makeKeyAndVisible];
     BaseViewController *baseVc = [[BaseViewController alloc]init];
     BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
+    Base_TableViewController *base_TableVc = [[Base_TableViewController alloc]init];
+
     
     UIViewController *vc = [[UIViewController alloc]init];
     UIView *view = [[UIView alloc]init];
@@ -34,8 +37,10 @@
     
     BaseNavigationController *base_nav = [[BaseNavigationController alloc]initWithRootViewController:baseVc];
     BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:baseTableVc];
+    BaseNavigationController *base_Table_nav = [[BaseNavigationController alloc]initWithRootViewController:base_TableVc];
 
-    self.window.rootViewController = base_nav;
+
+    self.window.rootViewController = baseTable_nav;
     
     return YES;
 }

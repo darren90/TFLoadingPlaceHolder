@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initTableView];
+    
+    [self.view bringSubviewToFront:self.navImage];
 }
 
 -(void)initTableView
@@ -30,8 +32,10 @@
     tableView.frame = self.view.bounds;
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.scrollEnabled= YES;
+    tableView.alwaysBounceVertical = YES;
 //    tableView.backgroundColor = [UIColor grayColor];
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark - Table view data source
@@ -43,7 +47,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
+    return 100;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //1,创建cell
@@ -52,6 +56,7 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID ];
     }
+    cell.textLabel.text = [NSString stringWithFormat:@"text-text:%ld",(long)indexPath.row];
     return cell;
 }
 
