@@ -96,6 +96,7 @@
                                                                   reloadBlock:^{
                                                                       [self.tableView.mj_header beginRefreshing];
                                                                   }] ;
+    NSLog(@"----nodata--");
     return netReloader;
 }
 

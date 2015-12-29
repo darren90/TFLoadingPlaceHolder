@@ -29,7 +29,7 @@
     UITableView * tableView = [[UITableView alloc]init];
     self.tableView = tableView;
     [self.view addSubview:tableView];
-    tableView.frame = self.view.bounds;
+    tableView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height);//self.view.bounds;
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.scrollEnabled= YES;
