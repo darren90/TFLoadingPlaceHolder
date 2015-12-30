@@ -11,6 +11,7 @@
 #import "BaseTableViewController.h"
 #import "BaseNavigationController.h"
 #import "Base_TableViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +28,7 @@
     BaseViewController *baseVc = [[BaseViewController alloc]init];
     BaseTableViewController *baseTableVc = [[BaseTableViewController alloc]init];
     Base_TableViewController *base_TableVc = [[Base_TableViewController alloc]init];
-
+    HomeViewController *home = [[HomeViewController alloc]init];
     
     UIViewController *vc = [[UIViewController alloc]init];
     UIView *view = [[UIView alloc]init];
@@ -36,7 +37,7 @@
     view.frame = CGRectMake(100,0, 100, 100);
     
     BaseNavigationController *base_nav = [[BaseNavigationController alloc]initWithRootViewController:baseVc];
-    BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:baseTableVc];
+    BaseNavigationController *baseTable_nav = [[BaseNavigationController alloc]initWithRootViewController:home];
     BaseNavigationController *base_Table_nav = [[BaseNavigationController alloc]initWithRootViewController:base_TableVc];
 
 

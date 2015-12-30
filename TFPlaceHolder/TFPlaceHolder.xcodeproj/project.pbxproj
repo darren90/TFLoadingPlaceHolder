@@ -19,6 +19,7 @@
 		8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */; };
 		8955EE131C32702C001CAD57 /* XTNetReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955EE121C32702C001CAD57 /* XTNetReloader.m */; };
 		896A89981C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */; };
+		896A899B1C33735E00FC3740 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A899A1C33735E00FC3740 /* HomeViewController.m */; };
 		FE7185071C32CC970035F588 /* Base_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185021C32CC970035F588 /* Base_TableViewController.m */; };
 		FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185041C32CC970035F588 /* BaseTableViewController.m */; };
 		FE7185091C32CC970035F588 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7185061C32CC970035F588 /* BaseViewController.m */; };
@@ -69,6 +70,8 @@
 		896A89951C32928B00FC3740 /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
 		896A89961C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
 		896A89971C32928B00FC3740 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
+		896A89991C33735E00FC3740 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		896A899A1C33735E00FC3740 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B8B0A84AE585A9A5DCA6C638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7185011C32CC970035F588 /* Base_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base_TableViewController.h; sourceTree = "<group>"; };
 		FE7185021C32CC970035F588 /* Base_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base_TableViewController.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				8955EDDE1C326691001CAD57 /* AppDelegate.m */,
 				8955EDE01C326691001CAD57 /* ViewController.h */,
 				8955EDE11C326691001CAD57 /* ViewController.m */,
+				896A89991C33735E00FC3740 /* HomeViewController.h */,
+				896A899A1C33735E00FC3740 /* HomeViewController.m */,
 				8955EE0D1C3269C9001CAD57 /* TFTableViewController.h */,
 				8955EE0E1C3269C9001CAD57 /* TFTableViewController.m */,
 				8955EDE31C326691001CAD57 /* Main.storyboard */,
@@ -398,6 +403,7 @@
 				8955EDE21C326691001CAD57 /* ViewController.m in Sources */,
 				FE71850C1C32D8D50035F588 /* BaseNavigationController.m in Sources */,
 				8955EDDF1C326691001CAD57 /* AppDelegate.m in Sources */,
+				896A899B1C33735E00FC3740 /* HomeViewController.m in Sources */,
 				8955EDDC1C326691001CAD57 /* main.m in Sources */,
 				FE7185081C32CC970035F588 /* BaseTableViewController.m in Sources */,
 				8955EE0F1C3269C9001CAD57 /* TFTableViewController.m in Sources */,

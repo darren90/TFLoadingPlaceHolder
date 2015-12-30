@@ -8,8 +8,8 @@
 
 #define NO_WIFI_WORDS                   @"网络不太顺畅喔~"
 
-float const width_displayNoWifiView  = 200.0 ;
-float const height_displayNoWifiView = 150.0 ;
+float const width_displayNoWifiView  = 100.0 ;
+float const height_displayNoWifiView = 100.0 ;
 
 float const width_labelshow          = 300.0 ;
 float const height_labelshow         = 35.0 ;
@@ -55,21 +55,26 @@ float const fontSize_bt              = 15.0 ;
 - (void)layoutSubviews {
     [super layoutSubviews] ;
     
+//    {{137.5, 283.5}, {100, 100}}
+//    _gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    _gifImageView.center = self.view.center;
+//    _gifImageView.bounds = CGRectMake(0, 0, 100, 100);
     CGRect rectWifi = CGRectZero ;
     rectWifi.size = CGSizeMake(width_displayNoWifiView, height_displayNoWifiView) ;
-    rectWifi.origin.x = (self.frame.size.width - width_displayNoWifiView) / 2.0 ;
-    rectWifi.origin.y = (self.frame.size.height - height_displayNoWifiView - height_labelshow - flexY_lb_bt - height_bt) / 2.0 ;
+    rectWifi.origin.x = (self.frame.size.width - width_displayNoWifiView)/2;//(self.frame.size.width - width_displayNoWifiView) / 2.0 ;
+    rectWifi.origin.y = 283.5 - 64 - 20;//(self.frame.size.height + 64 - height_displayNoWifiView -height_labelshow -height_bt)/2;//(self.frame.size.height - height_displayNoWifiView - height_labelshow - flexY_lb_bt - height_bt) / 2.0 ;
     self.nowifiImgView.frame = rectWifi ;
+//    self.nowifiImgView.center = self.center;
     
     CGRect rectLabel = CGRectZero ;
     rectLabel.origin.x = (self.frame.size.width - width_labelshow) / 2.0 ;
-    rectLabel.origin.y = rectWifi.origin.y + rectWifi.size.height ;
+    rectLabel.origin.y = CGRectGetMaxY(self.nowifiImgView.frame);//rectWifi.origin.y + rectWifi.size.height ;
     rectLabel.size = CGSizeMake(width_labelshow, height_labelshow) ;
     self.lb.frame = rectLabel ;
     
     CGRect rectButton = CGRectZero ;
     rectButton.origin.x = (self.frame.size.width - width_bt) / 2.0 ;
-    rectButton.origin.y = rectLabel.origin.y + rectLabel.size.height + flexY_lb_bt ;
+    rectButton.origin.y = CGRectGetMaxY(self.lb.frame);//rectLabel.origin.y + rectLabel.size.height + flexY_lb_bt ;
     rectButton.size = CGSizeMake(width_bt, height_bt) ;
     self.bt.frame = rectButton ;
 }

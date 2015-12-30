@@ -10,4 +10,7 @@
 
 @interface BaseTableViewController : BaseViewController
 
+@property (nonatomic,weak)UITableView * tableView;
+@property (nonatomic,strong)NSMutableArray * dataArray;
+
 @end
