@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSLog(@"--frame:%@",NSStringFromCGRect(self.gifImageView.frame));
 }
 
@@ -27,12 +28,7 @@
     [super viewDidAppear:animated];
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        for (int i = 0 ; i< 20 ; i++) {
-            [self.dataArray addObject:@""];
-        }
-        [self.tableView reloadData];
-    });
+
 }
 
 
@@ -59,6 +55,19 @@
     cell.textLabel.text = [NSString stringWithFormat:@"home数据--：%ld",(long)indexPath.row];
     
     return cell;
+}
+
+-(void)requestData
+{
+    
+    NSLog(@"--page:%d-isRefreshing:%d",self.currentPage,self.isRefreshing);
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        for (int i = 0 ; i< 20 ; i++) {
+            [self.dataArray addObject:@""];
+        }
+        [self.tableView cyl_reloadData];
+//    });
 }
 
  

@@ -8,10 +8,11 @@
 
 #import "BaseTableViewController.h"
 #import <MJRefresh.h>
-#import "CYLTableViewPlaceHolder.h"
 #import "XTNetReloader.h"
-@interface BaseTableViewController ()<UITableViewDelegate,UITableViewDataSource,CYLTableViewPlaceHolderDelegate>
+@interface BaseTableViewController ()
 
+
+@property (nonatomic,weak)XTNetReloader *netReloader;
 
 @end
 
@@ -22,6 +23,9 @@
     // Do any additional setup after loading the view.
     [self initTableView];
     [self setUpMJRefresh];
+    
+    self.currentPage = 1;
+    self.isRefreshing = YES;
 
     [self.view bringSubviewToFront:self.navImage];
 }
@@ -50,7 +54,6 @@
     return self.dataArray.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //1,创建cell
     static NSString *ID = @"cell";
@@ -64,52 +67,71 @@
     return cell;
 }
 
-
 - (void)setUpMJRefresh {
     __unsafe_unretained __typeof(self) weakSelf = self;
     
     // 设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        weakSelf.currentPage = 1 ;
+        weakSelf.isRefreshing = YES;
+        
         [weakSelf loadNewData];
     }];
     
     // 设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        [weakSelf loadMoreData];
+        weakSelf.isRefreshing = NO;
+        weakSelf.currentPage ++;
+
+        [weakSelf loadNewData];
     }];
     // 马上进入刷新状态
     [self.tableView.mj_header beginRefreshing];
 }
 
+
 -(void)loadMoreData
 {
-    if (self.dataArray.count) {
-        self.dataArray = nil;
-    }
+//    if (self.dataArray.count) {
+//        self.dataArray = nil;
+//    }
     
     // 2.模拟2秒后刷新表格UI（真实开发中，可以移除这段gcd代码）
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self stopanimationg];
         // 刷新表格
         [self.tableView cyl_reloadData];
         // 拿到当前的下拉刷新控件，结束刷新状态
         [self.tableView.mj_footer endRefreshing];
-    });
+//    });
 }
 
-- (void)loadNewData {
-//    for (int i = 0; i<8; i++) {
-//        [self.dataArray insertObject:@"" atIndex:0];
-//    }
-    
+#pragma mark 请求数据
+
+- (void)loadNewData{
     // 2.模拟2秒后刷新表格UI（真实开发中，可以移除这段gcd代码）
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self stopanimationg];
         // 刷新表格
         [self.tableView cyl_reloadData];
         // 拿到当前的下拉刷新控件，结束刷新状态
         [self.tableView.mj_header endRefreshing];
-    });
+        [self.tableView.mj_footer endRefreshing];
+//    });
+    
+    
+    if (self.isRefreshing) {//上拉刷新
+        [self.dataArray removeAllObjects];
+    }else{
+    
+    }
+    
+    [self requestData];
+}
+
+-(void)requestData
+{
+    
 }
 
 -(void)stopanimationg
@@ -117,7 +139,6 @@
     [self.gifImageView stopAnimating];
     [self.gifImageView removeFromSuperview];
 }
-
 
 
 - (UIView *)makePlaceHolderView {
@@ -133,6 +154,8 @@
 //                                                                      [self.view addSubview:self.gifImageView];
 //                                                                      [self.gifImageView startAnimating];
                                                                   }] ;
+    self.netReloader = netReloader;
+    netReloader.backgroundColor = [UIColor blueColor];
     NSLog(@"----nodata--");
     return netReloader;
 }
